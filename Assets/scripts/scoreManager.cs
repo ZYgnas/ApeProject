@@ -10,7 +10,7 @@ public class scoreManager : MonoBehaviour
     public Text scoreText;
     public Text moneyText;
 
-    public int score = 0;
+    public static int score = 0;
     public static int money = 0;
 
     private void Awake()
