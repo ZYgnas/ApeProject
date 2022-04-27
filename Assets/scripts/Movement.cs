@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movement : MonoBehaviour
+{
+    public float moveSpeed = 5f;
+
+    public Rigidbody2D rb;
+
+    Vector2 movement;
+
+    // Update is called once per frame
+    void Update()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void SpeedPlus()
+    {
+        if(scoreManager.money >= 25)
+        {
+            moveSpeed += 10f;
+            scoreManager.money -= 25;
+        }
+    }
+
+    public void SpeedMinus()
+    {
+        if(moveSpeed> 15f)
+        {
+            moveSpeed -= 10f;
+            scoreManager.money += 10;
+        }
+    }
+}
