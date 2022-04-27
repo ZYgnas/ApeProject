@@ -9,9 +9,11 @@ public class scoreManager : MonoBehaviour
 
     public Text scoreText;
     public Text moneyText;
+    public Text HSText;
 
     public static int score = 0;
     public static int money = 0;
+    public static int highScore = 0;
 
     private void Awake()
     {
@@ -23,10 +25,16 @@ public class scoreManager : MonoBehaviour
     {
         scoreText.text = "Score: " + score.ToString();
         moneyText.text = "Money: " + money.ToString();
+        HSText.text = "HS: " + highScore.ToString();
     }
 
     void Update()
     {
+        if (score > highScore)
+        {
+            highScore = score;
+        }
+        HSText.text = "HS: " + highScore.ToString();
         scoreText.text = "Score: " + score.ToString();
         moneyText.text = "Money: " + money.ToString();
     }
