@@ -21,4 +21,22 @@ public class Movement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    public void SpeedPlus()
+    {
+        if(scoreManager.money >= 25)
+        {
+            moveSpeed += 10f;
+            scoreManager.money -= 25;
+        }
+    }
+
+    public void SpeedMinus()
+    {
+        if(moveSpeed> 15f)
+        {
+            moveSpeed -= 10f;
+            scoreManager.money += 10;
+        }
+    }
 }

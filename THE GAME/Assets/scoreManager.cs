@@ -10,8 +10,8 @@ public class scoreManager : MonoBehaviour
     public Text scoreText;
     public Text moneyText;
 
-    int score = 0;
-    int money = 0;
+    public int score = 0;
+    public static int money = 0;
 
     private void Awake()
     {
@@ -20,6 +20,12 @@ public class scoreManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
+    {
+        scoreText.text = "Score: " + score.ToString();
+        moneyText.text = "Money: " + money.ToString();
+    }
+
+    void Update()
     {
         scoreText.text = "Score: " + score.ToString();
         moneyText.text = "Money: " + money.ToString();
