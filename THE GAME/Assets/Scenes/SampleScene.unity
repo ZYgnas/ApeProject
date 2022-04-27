@@ -545,7 +545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281146641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.5, z: -5.7466335}
+  m_LocalPosition: {x: 0, y: 0, z: -5.7466335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1548765091}
@@ -571,7 +571,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.1001766
+  MinDistance: 0.8385073
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -3114,7 +3114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 7dde5f7626e78394e96e19bdca0db064, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: 8cb908aa71143b643b8904e34981ad8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3133,8 +3133,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548765089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2000122, y: -0.7000427, z: -11}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 1.78, y: -2.3, z: -11}
+  m_LocalScale: {x: 4.8468103, y: 4.8847213, z: 1}
   m_Children:
   - {fileID: 281146644}
   m_Father: {fileID: 0}
@@ -3188,9 +3188,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011633277, y: 0.052163243}
+  m_Offset: {x: 0.0009908507, y: 0}
   serializedVersion: 2
-  m_Radius: 1.305532
+  m_Radius: 0.49279246
 --- !u!114 &1548765095
 MonoBehaviour:
   m_ObjectHideFlags: 0
