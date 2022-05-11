@@ -24,10 +24,10 @@ public class Movement : MonoBehaviour
 
     public void SpeedPlus()
     {
-        if(scoreManager.money >= 25)
+        if(scoreManager.money >= 50)
         {
-            moveSpeed += 10f;
-            scoreManager.money -= 25;
+            moveSpeed += .5f;
+            scoreManager.money -= 50;
         }
     }
 
@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
     {
         if(moveSpeed> 15f)
         {
-            moveSpeed -= 10f;
+            moveSpeed -= .5f;
             scoreManager.money += 10;
         }
     }
