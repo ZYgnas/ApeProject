@@ -7,6 +7,7 @@ public class colDetect : MonoBehaviour
 {
     public Text score;
     private float Score = 0;
+    public AudioClip deathClip;
 
     void Update()
     {
@@ -14,8 +15,12 @@ public class colDetect : MonoBehaviour
     }
     //public Text score;
     // Start is called before the first frame update
-    private void OnTriggerEnter2D (Collider2D other)
+    private void OnTriggerEnter2D (Collider2D other) //this is commented
     {
+        if (other.gameObject.tag != "EnemyHUNTER")
+        {
+            AudioSource.PlayClipAtPoint(deathClip, transform.position);
+        }
         scoreManager.instance.AddPoints();
         other.gameObject.SetActive(false);
     }

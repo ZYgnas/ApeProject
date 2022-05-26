@@ -618,7 +618,7 @@ Transform:
   m_LocalScale: {x: 1.1121293, y: 1.1247164, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0.151, y: -1.77, z: 4.864}
 --- !u!1 &185936454
 GameObject:
@@ -756,7 +756,7 @@ Camera:
   far clip plane: 1000
   field of view: 75.4
   orthographic: 1
-  orthographic size: 17
+  orthographic size: 27.08741
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1037,7 +1037,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405467340
 GameObject:
@@ -1931,7 +1931,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 1
@@ -1943,7 +1943,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score : 300'
+  m_Text: 'Score: 300'
 --- !u!222 &676865532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2423,7 +2423,7 @@ Transform:
   m_LocalScale: {x: 1.1121293, y: 1.1247164, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0.151, y: -1.77, z: 4.864}
 --- !u!1 &859301883
 GameObject:
@@ -2893,7 +2893,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 1
@@ -3337,7 +3337,7 @@ Transform:
   m_LocalScale: {x: 1.1121293, y: 1.1247164, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0.151, y: -1.77, z: 4.864}
 --- !u!1 &1296819115
 GameObject:
@@ -3588,7 +3588,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 1
@@ -4071,6 +4071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 21d54e2a8521eb24aa1f036c4e205968, type: 3}
 --- !u!114 &1548765096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4577,7 +4578,7 @@ GameObject:
   - component: {fileID: 2080612227}
   m_Layer: 0
   m_Name: 'EnemyHUNTER '
-  m_TagString: Untagged
+  m_TagString: EnemyHUNTER
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4726,3 +4727,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b555384b007b54c971aa7c0e8ac8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathClip: {fileID: 8300000, guid: c59ee80405485f240a8c5395741d2bbb, type: 3}
